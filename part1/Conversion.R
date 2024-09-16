@@ -6,7 +6,7 @@ if (!dir.exists(results_dir)) {
   dir.create(results_dir, recursive = TRUE)
 }
 # Define the file path to the data directory
-data_dir <- file.path("dataSRP", "")
+data_dir <- file.path("data", "")
 
 # Declare the file path to the gene expression matrix file
 data_file <- file.path(data_dir, "ERP1107715.tsv")
@@ -108,5 +108,5 @@ final_mapped_df %>%
 # Write mapped and annotated data frame to output file
 readr::write_tsv(final_mapped_df, file.path(
   results_dir,
-  "ERP107715_GeneNames.tsv" # Replace with a relevant output file name
+  "GSE140684_GeneNames.tsv" # Replace with a relevant output file name
 ))
