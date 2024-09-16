@@ -1,0 +1,58 @@
+refinebio_accession_code	experiment_accession	refinebio_age	refinebio_cell_line	refinebio_compound	refinebio_developmental_stage	refinebio_disease	refinebio_disease_stage	refinebio_genetic_information	refinebio_organism	refinebio_platform	refinebio_processed	refinebio_processor_id	refinebio_processor_name	refinebio_processor_version	refinebio_race	refinebio_sex	refinebio_source_archive_url	refinebio_source_database	refinebio_specimen_part	refinebio_subject	refinebio_time	refinebio_title	refinebio_treatment
+SRR5813713	SRP111402		nhutert						HOMO_SAPIENS	Illumina HiSeq 2000 (IlluminaHiSeq2000)	True	298	Tximport	v1.20.0				SRA	non-malignant	cell line		U2005	
+SRR5813714	SRP111402		hcv29						HOMO_SAPIENS	Illumina HiSeq 2000 (IlluminaHiSeq2000)	True	298	Tximport	v1.20.0				SRA	non-malignant	cell line		U2002	
+SRR5813715	SRP111402		ht1197						HOMO_SAPIENS	Illumina HiSeq 2000 (IlluminaHiSeq2000)	True	298	Tximport	v1.20.0				SRA	non-malignant	cell line		U2003	
+SRR5813716	SRP111402		rt4						HOMO_SAPIENS	Illumina HiSeq 2000 (IlluminaHiSeq2000)	True	298	Tximport	v1.20.0				SRA	non-malignant	cell line		U2006	
+SRR5813717	SRP111402		j82						HOMO_SAPIENS	Illumina HiSeq 2000 (IlluminaHiSeq2000)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		U2004	
+SRR5813718	SRP111402		ht-1376						HOMO_SAPIENS	Illumina HiSeq 2000 (IlluminaHiSeq2000)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		U2011	
+SRR5813719	SRP111402		t24						HOMO_SAPIENS	Illumina HiSeq 2000 (IlluminaHiSeq2000)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		U2008	
+SRR5813720	SRP111402		umuc3						HOMO_SAPIENS	Illumina HiSeq 2000 (IlluminaHiSeq2000)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		U2009	
+SRR5813721	SRP111402		fl3						HOMO_SAPIENS	Illumina HiSeq 2000 (IlluminaHiSeq2000)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		U2001	
+SRR5813722	SRP111402		fl3						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		FL3_cyt_nr2_RZ	
+SRR5813723	SRP111402		fl3						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		FL3_cyt_nr2_RZ	
+SRR5813724	SRP111402		fl3						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		FL3_cyt_nr2_RZ	
+SRR5813725	SRP111402		fl3						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		FL3_cyt_nr2_RZ	
+SRR5813726	SRP111402		fl3						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		FL3_nuc_nr2_RZ	
+SRR5813727	SRP111402		fl3						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		FL3_nuc_nr2_RZ	
+SRR5813728	SRP111402		fl3						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		FL3_nuc_nr2_RZ	
+SRR5813729	SRP111402		fl3						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		FL3_nuc_nr2_RZ	
+SRR5813730	SRP111402		fl3						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		FL3_cyt_PolyA	
+SRR5813731	SRP111402		fl3						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		FL3_cyt_PolyA	
+SRR5813732	SRP111402		fl3						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		FL3_cyt_PolyA	
+SRR5813733	SRP111402		fl3						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		FL3_cyt_PolyA	
+SRR5813734	SRP111402		fl3						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		FL3_nuc_PolyA	
+SRR5813735	SRP111402		fl3						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		FL3_nuc_PolyA	
+SRR5813736	SRP111402		fl3						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		FL3_nuc_PolyA	
+SRR5813737	SRP111402		fl3						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		FL3_nuc_PolyA	
+SRR5813738	SRP111402		hcv29						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	non-malignant	cell line		HCV29_cyt_RZ	
+SRR5813739	SRP111402		hcv29						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	non-malignant	cell line		HCV29_cyt_RZ	
+SRR5813740	SRP111402		hcv29						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	non-malignant	cell line		HCV29_cyt_RZ	
+SRR5813741	SRP111402		hcv29						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	non-malignant	cell line		HCV29_cyt_RZ	
+SRR5813742	SRP111402		hcv29						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	non-malignant	cell line		HCV29_nuc_RZ	
+SRR5813743	SRP111402		hcv29						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	non-malignant	cell line		HCV29_nuc_RZ	
+SRR5813744	SRP111402		hcv29						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	non-malignant	cell line		HCV29_nuc_RZ	
+SRR5813745	SRP111402		hcv29						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	non-malignant	cell line		HCV29_nuc_RZ	
+SRR5813746	SRP111402		hcv29						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	non-malignant	cell line		HCV29_cyt_PolyA	
+SRR5813747	SRP111402		hcv29						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	non-malignant	cell line		HCV29_cyt_PolyA	
+SRR5813748	SRP111402		hcv29						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	non-malignant	cell line		HCV29_cyt_PolyA	
+SRR5813749	SRP111402		hcv29						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	non-malignant	cell line		HCV29_cyt_PolyA	
+SRR5813750	SRP111402		hcv29						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	non-malignant	cell line		HCV29_nuc_PolyA	
+SRR5813751	SRP111402		hcv29						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	non-malignant	cell line		HCV29_nuc_PolyA	
+SRR5813752	SRP111402		hcv29						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	non-malignant	cell line		HCV29_nuc_PolyA	
+SRR5813753	SRP111402		hcv29						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	non-malignant	cell line		HCV29_nuc_PolyA	
+SRR5813754	SRP111402		t24						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		T24_cyt_RZ	
+SRR5813755	SRP111402		t24						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		T24_cyt_RZ	
+SRR5813756	SRP111402		t24						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		T24_cyt_RZ	
+SRR5813757	SRP111402		t24						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		T24_cyt_RZ	
+SRR5813758	SRP111402		t24						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		T24_nuc_RZ	
+SRR5813759	SRP111402		t24						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		T24_nuc_RZ	
+SRR5813760	SRP111402		t24						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		T24_nuc_RZ	
+SRR5813761	SRP111402		t24						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		T24_nuc_RZ	
+SRR5813762	SRP111402		t24						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		T24_cyt_PolyA	
+SRR5813763	SRP111402		t24						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		T24_cyt_PolyA	
+SRR5813764	SRP111402		t24						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		T24_cyt_PolyA	
+SRR5813765	SRP111402		t24						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		T24_cyt_PolyA	
+SRR5813766	SRP111402		t24						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		T24_nuc_PolyA	
+SRR5813767	SRP111402		t24						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		T24_nuc_PolyA	
+SRR5813768	SRP111402		t24						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		T24_nuc_PolyA	
+SRR5813769	SRP111402		t24						HOMO_SAPIENS	NextSeq 500 (NextSeq500)	True	298	Tximport	v1.20.0				SRA	metastatic	cell line		T24_nuc_PolyA	

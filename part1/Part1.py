@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load the data from the TSV file into a pandas DataFrame
-file_path = "../data/ERP107715_GeneNames.tsv"
+file_path = "../data/SRP111402_GeneNames.tsv"
 df = pd.read_csv(file_path, sep='\t')
 
 #print(df.head())
