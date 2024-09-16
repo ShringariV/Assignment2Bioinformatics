@@ -24,8 +24,6 @@ print("Summary statistics:")
 print(data.describe())
 print('\n')
 
-#Missing values
-print("Missing values:")
-print(data.isnull().sum())
-print('\n')
+#Columns of the data
+print(data.columns.tolist())
 
