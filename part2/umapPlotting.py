@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import umapPlotting
 
-expressionData = pd.read_csv('../data/GSE140684_Symbol.tsv', sep='\t', index_col=0)
+expressionData = pd.read_csv('../oldData/GSE140684_Symbol.tsv', sep='\t', index_col=0)
 
-metaData = pd.read_csv('../data/metadata_GSE140684.tsv', sep='\t', index_col=0)
+metaData = pd.read_csv('../oldData/metadata_GSE140684.tsv', sep='\t', index_col=0)
 
 commonSamples = expressionData.columns.intersection(metaData.index)
 expressionData = expressionData[commonSamples]

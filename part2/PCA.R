@@ -5,7 +5,7 @@ if (!dir.exists(results_dir)) {
   dir.create(results_dir, recursive = TRUE)
 }
 # Define the file path to the data directory
-data_dir <- file.path("dataGSE", "")
+data_dir <- file.path("data", "")
 
 # Define the file path to the plots directory
 plots_dir <- "plots"
@@ -19,12 +19,12 @@ if (!dir.exists(plots_dir)) {
 # Declare the file path to the gene expression matrix file
 # inside directory saved as `data_dir`
 # Replace with the path to your dataset file
-data_file <- file.path(data_dir, "GSE140684.tsv")
+data_file <- file.path(data_dir, "ERP107715.tsv")
 
 # Declare the file path to the metadata file
 # inside the directory saved as `data_dir`
 # Replace with the path to your metadata file
-metadata_file <- file.path(data_dir, "metadata_GSE140684.tsv")
+metadata_file <- file.path(data_dir, "metadataERP107715.tsv")
 
 #If exists
 file.exists(data_file)

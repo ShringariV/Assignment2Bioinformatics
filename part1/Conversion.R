@@ -9,10 +9,10 @@ if (!dir.exists(results_dir)) {
 data_dir <- file.path("data", "")
 
 # Declare the file path to the gene expression matrix file
-data_file <- file.path(data_dir, "ERP1107715.tsv")
+data_file <- file.path(data_dir, "ERP107715.tsv")
 
 # Declare the file path to the metadata file
-metadata_file <- file.path(data_dir, "metadata_ERP1107715.tsv")
+metadata_file <- file.path(data_dir, "metadata_ERP107715.tsv")
 
 # Check if files exist
 file.exists(data_file)
@@ -54,7 +54,7 @@ mapped_list <- mapIds(
   org.Hs.eg.db, # Replace with annotation package for your organism
   keys = expression_df$Gene,
   keytype = "ENSEMBL", # Replace with the type of gene identifiers in your data
-  column = "GENENAME", # Map to Gene Names instead of ENTREZID
+  column = "SYMBOL", # Map to Gene Names instead of ENTREZID
   multiVals = "list"
 )
 
@@ -93,7 +93,7 @@ final_mapped_df <- data.frame(
     org.Hs.eg.db, # Replace with annotation package for your organism
     keys = expression_df$Gene,
     keytype = "ENSEMBL", # Replace with the gene identifiers used in your data
-    column = "GENENAME", # Map to Gene Names
+    column = "SYMBOL", # Map to Gene Names
     multiVals = "first" # Keep only the first mapped value for each Ensembl ID
   )
 ) %>%
@@ -108,5 +108,5 @@ final_mapped_df %>%
 # Write mapped and annotated data frame to output file
 readr::write_tsv(final_mapped_df, file.path(
   results_dir,
-  "GSE140684_GeneNames.tsv" # Replace with a relevant output file name
+  "ERP107715_Symbol.tsv" # Replace with a relevant output file name
 ))
