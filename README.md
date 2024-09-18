@@ -40,7 +40,7 @@ a.	A tutorial for this: [alexslemonade.github.io/refinebio-examples/03-rnaseq/di
 
 b.	Create a volcano plot of your data. Make sure to label the axes and provide a legend.
 
-c.	Create a table of the top 50 differentially expressed genes. Add this to your assignment writeup. Include the full table of all results in a results folder in your GitHub repository.
+    c.	Create a table of the top 50 differentially expressed genes. Add this to your assignment writeup. Include the full table of all results in a results folder in your GitHub repository.
 
 d.	Save and summarize your findings.
 
