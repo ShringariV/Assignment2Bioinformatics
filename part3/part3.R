@@ -20,13 +20,13 @@ if (!dir.exists(results_dir)) {
 }
 
 # Define the file path to the data directory
-data_dir <- file.path("dataGSE", "")
+data_dir <- file.path("data", "")
 
 # Declare the file path to the gene expression matrix file
-data_file <- file.path(data_dir, "GSE140684.tsv")
+data_file <- file.path(data_dir, "ERP107715.tsv")
 
 # Declare the file path to the metadata file
-metadata_file <- file.path(data_dir, "metadata_GSE140684.tsv")
+metadata_file <- file.path(data_dir, "metadata_ERP107715.tsv")
 
 # Check if the gene expression matrix file is at the path stored in `data_file`
 file.exists(data_file)
@@ -75,22 +75,22 @@ head(metadata$refinebio_title)
 
 metadata <- metadata %>%
   # Let's get the Stelara and placebo status from this variable
-  dplyr::mutate(treatment_status = dplyr::case_when(
-    stringr::str_detect(refinebio_title, "Stelara") ~ "Stelara",
-    stringr::str_detect(refinebio_title, "Placebo") ~ "Placebo"
+  dplyr::mutate(genderStatus = dplyr::case_when(
+    stringr::str_detect(refinebio_title, "female") ~ "female",
+    stringr::str_detect(refinebio_title, "male") ~ "male"
   ))
 
-dplyr::select(metadata, refinebio_title, treatment_status)
+dplyr::select(metadata, refinebio_title, genderStatus)
 
-str(metadata$treatment_status)
+str(metadata$genderStatus)
 
 metadata <- metadata %>%
   dplyr::mutate(
     # Here we define the values our factor variable can have and their order.
-    treatment_status = factor(treatment_status, levels = c("Stelara", "Placebo"))
+    genderStatus = factor(genderStatus, levels = c("female", "male"))
   )
 
-levels(metadata$treatment_status)
+levels(metadata$genderStatus)
 
 filteredExpressionDF <- expression_df %>%
   dplyr::filter(rowSums(.) >= 10)
@@ -105,7 +105,7 @@ geneMatrix[geneMatrix < 0] <- 0
 ddset <- DESeqDataSetFromMatrix(
   countData = geneMatrix,
   colData = metadata,
-  design = ~treatment_status
+  design = ~genderStatus
 )
 
 deseq_object <- DESeq(ddset)
@@ -132,13 +132,13 @@ deseq_df <- deseq_results %>%
 
 head(deseq_df)
 
-plotCounts(ddset, gene = "ENSG00000280670", intgroup = "treatment_status")
+plotCounts(ddset, gene = "ENSG00000280670", intgroup = "genderStatus")
 
 readr::write_tsv(
   deseq_df,
   file.path(
     results_dir,
-    "GSE140684_diff_expr_results.tsv"
+    "ERP107715_diff_expr_results.tsv"
   )
 )
 
@@ -156,7 +156,7 @@ volcano_plot
 
 ggsave(
   plot = volcano_plot,
-  file.path(plots_dir, "GSE140684_volcano_plot.png")
+  file.path(plots_dir, "ERP107715_volcano_plot.png")
 ) # Replace with a plot name relevant to your data
 
 # Run the DESeq2 analysis

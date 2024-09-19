@@ -4,9 +4,9 @@ from sklearn.manifold import TSNE
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-expressionData = pd.read_csv('../data/GSE140684_Symbol.tsv', sep='\t', index_col=0)
+expressionData = pd.read_csv('../data/ERP107715_Symbol.tsv', sep='\t', index_col=0)
 
-metaData = pd.read_csv('../data/metadata_GSE140684.tsv', sep='\t', index_col=0)
+metaData = pd.read_csv('../data/metadata_ERP107715.tsv', sep='\t', index_col=0)
 
 commonSamples = expressionData.columns.intersection(metaData.index)
 expressionData = expressionData[commonSamples]
@@ -25,7 +25,7 @@ metaData['tsne_2d-two'] = tsne_results[:,1]
 plt.figure(figsize=(10,8))
 sns.scatterplot(
     x="tsne_2d-one", y="tsne_2d-two",
-    hue="refinebio_treatment",
+    hue="refinebio_sex",
     palette=sns.color_palette("viridis", as_cmap=False),
     data=metaData,
     legend="full",

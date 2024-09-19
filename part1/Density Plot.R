@@ -1,6 +1,6 @@
-results_dir <- file.path("results", "")
+results_dir <- file.path("data", "")
 
-hgnFile <- file.path(results_dir, "GSE140684_Symbol.tsv")
+hgnFile <- file.path(results_dir, "ERP107715_Symbol.tsv")
 
 expressionData <- read.csv(hgnFile, sep="\t", row.names = 1)
 

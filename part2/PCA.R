@@ -5,7 +5,7 @@ if (!dir.exists(results_dir)) {
   dir.create(results_dir, recursive = TRUE)
 }
 # Define the file path to the data directory
-data_dir <- file.path("dataGSE", "")
+data_dir <- file.path("data", "")
 
 # Define the file path to the plots directory
 plots_dir <- "plots"
@@ -19,12 +19,12 @@ if (!dir.exists(plots_dir)) {
 # Declare the file path to the gene expression matrix file
 # inside directory saved as `data_dir`
 # Replace with the path to your dataset file
-data_file <- file.path(data_dir, "GSE140684.tsv")
+data_file <- file.path(data_dir, "ERP107715.tsv")
 
 # Declare the file path to the metadata file
 # inside the directory saved as `data_dir`
 # Replace with the path to your metadata file
-metadata_file <- file.path(data_dir, "metadata_GSE140684.tsv")
+metadata_file <- file.path(data_dir, "metadata_ERP107715.tsv")
 
 #If exists
 file.exists(data_file)
@@ -64,10 +64,10 @@ all.equal(colnames(expression_df), metadata$refinebio_accession_code)
 # convert the columns we will be using for annotation into factors
 metadata <- metadata %>%
   dplyr::mutate(
-    refinebio_treatment = factor(
-      refinebio_treatment,
+    refinebio_sex = factor(
+      refinebio_sex,
       # specify the possible levels in the order we want them to appear
-      levels = c("ustekinumab", "placebo")
+      levels = c("female", "male")
     ),
     refinebio_disease = as.factor(refinebio_disease)
   )
@@ -97,7 +97,7 @@ dds_norm <- vst(dds)
 pca_results <-
   plotPCA(
     dds_norm,
-    intgroup = c("refinebio_treatment", "refinebio_disease"),
+    intgroup = c("refinebio_sex", "refinebio_disease"),
     returnData = TRUE # This argument tells R to return the PCA values
   )
 # Plot using `ggplot()` function and save to an object
@@ -107,7 +107,7 @@ annotated_pca_plot <- ggplot(
     x = PC1,
     y = PC2,
     # plot points with different colors for each `refinebio_treatment` group
-    color = refinebio_treatment,
+    color = refinebio_sex,
     # plot points with different shapes for each `refinebio_disease` group
     shape = refinebio_disease
   )
@@ -119,7 +119,7 @@ annotated_pca_plot <- ggplot(
 annotated_pca_plot
 # Save plot using `ggsave()` function
 ggsave(
-  file.path(plots_dir, "GSE140684_pca_plot.png"),
+  file.path(plots_dir, "ERP107715_pca_plot.png"),
   # Replace with a file name relevant your plotted data
   plot = annotated_pca_plot # the plot object that we want saved to file
 )

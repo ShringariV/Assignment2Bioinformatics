@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 # Assuming `data` is a dictionary with keys as sequences and values as their counts
 
-file_path = 'data/metadata_GSE140684.tsv'
+file_path = 'oldData/metadataERP107715Filtered.tsv'
 data = pd.read_csv(file_path, sep='\t')
 
 #display first few rows
