@@ -45,7 +45,7 @@ data_folder <- "../data"
 setwd("/Users/joelalomafernandez/Desktop/Assignment2Bio/Assignment2Bioinformatics/part4")
 
 # Load the DESeq2 results from the Part 3 folder
-deseq_df <- readr::read_tsv(file.path(part3_folder, "GSE140684_diff_expr_results.tsv"), show_col_types = FALSE)
+deseq_df <- readr::read_tsv(file.path(part3_folder, "ERP107715_diff_expr_results.tsv"), show_col_types = FALSE)
 
 # Filter the significant genes from the DESeq2 results (padj < 0.05)
 significant_genes <- deseq_df %>%
@@ -58,7 +58,7 @@ top_genes <- significant_genes %>%
   dplyr::pull(Gene)
 
 # Load the expression matrix
-expression_df <- readr::read_tsv(file.path(data_folder, "GSE140684.tsv"), show_col_types = FALSE)
+expression_df <- readr::read_tsv(file.path(data_folder, "ERP107715.tsv"), show_col_types = FALSE)
 
 # Extract the gene expression matrix for the top 50 genes
 top_gene_expression <- expression_df %>%
@@ -77,7 +77,7 @@ colnames(top_gene_expression_scaled) <- colnames(top_gene_expression)
 col_palette <- colorRampPalette(rev(brewer.pal(9, "RdBu")))(255)
 
 # Load the metadata file
-metadata_file <- file.path(data_folder, "metadata_GSE140684.tsv") # Adjust file path as needed
+metadata_file <- file.path(data_folder, "metadata_ERP107715.tsv") # Adjust file path as needed
 metadata_df <- readr::read_tsv(metadata_file, show_col_types = FALSE)
 
 # Extract relevant columns for annotations
@@ -87,12 +87,12 @@ annotation_df <- metadata_df %>%
   dplyr::rename(Sample = refinebio_accession_code, Treatment = refinebio_treatment)
 
 # Create a named vector for annotations
-annotation_vector <- setNames(annotation_df$Treatment, annotation_df$Sample)
+annotation_vector <- setNames(annotation_df$Sex, annotation_df$Sample)
 
 # Create the annotation object for the heatmap
 annotation <- ComplexHeatmap::HeatmapAnnotation(
-  Treatment = annotation_vector,
-  col = list(Treatment = c("ustekinumab" = "blue", "placebo" = "red")) # Adjust colors as needed
+  Sex = annotation_vector,
+  col = list(Sex = c("female" = "pink", "male" = "blue")) # Adjust colors as needed
 )
 
 # Generate the heatmap
@@ -116,7 +116,7 @@ heatmap_plot <- ComplexHeatmap::Heatmap(
 )
 
 # Define the file path to save the heatmap
-file_path <- file.path(getwd(), "GSE140684_Heatmap.png")
+file_path <- file.path(getwd(), "ERP107715_Heatmap.png")
 
 # Save the heatmap as a PNG image
 png(filename = file_path, width = 1200, height = 1000) # Adjust the width and height as needed
