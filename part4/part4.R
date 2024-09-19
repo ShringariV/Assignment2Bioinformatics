@@ -83,8 +83,8 @@ metadata_df <- readr::read_tsv(metadata_file, show_col_types = FALSE)
 # Extract relevant columns for annotations
 # Assuming 'refinebio_accession_code' matches the column names in your expression data
 annotation_df <- metadata_df %>%
-  dplyr::select(refinebio_accession_code, refinebio_treatment) %>%
-  dplyr::rename(Sample = refinebio_accession_code, Treatment = refinebio_treatment)
+  dplyr::select(refinebio_accession_code, refinebio_sex) %>%
+  dplyr::rename(Sample = refinebio_accession_code, Sex = refinebio_sex)
 
 # Create a named vector for annotations
 annotation_vector <- setNames(annotation_df$Sex, annotation_df$Sample)
