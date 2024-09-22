@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 from scipy.stats import ranksums
-
+#Gene-Ontology
 df = pd.read_csv('../part3/ERP107715_diff_expr_results.tsv', sep='\t')
 
 # print(df.columns)
@@ -27,3 +27,4 @@ plt.hist(upRegulated, bins=50, alpha=0.5, label='Upregulated')
 plt.hist(downRegulated, bins=50, alpha=0.5, label='Downregulated')
 plt.legend(loc='upper right')
 plt.show()
+
