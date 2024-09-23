@@ -76,4 +76,4 @@ dotplot(go_results, showCategory = 10) +
   ggtitle("GO Enrichment Dot Plot")
 
 # Save results to a CSV file
-write.csv(as.data.frame(go_results), file = "go_enrichment_results.csv", row.names = FALSE)
+write.csv(as.data.frame(go_results), file = "enrichment results/go_enrichment_results.csv", row.names = FALSE)

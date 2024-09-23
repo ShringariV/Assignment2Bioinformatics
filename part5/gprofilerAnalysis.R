@@ -48,8 +48,8 @@ gost_res <- gost(
   sources = c("GO:BP", "KEGG")    # You can specify different sources like GO terms, KEGG pathways, etc.
 )
 # Define file paths for saving results and plots
-csv_output_path <- file.path(result_dir, "gprofiler_results.csv")
-plot_output_path <- file.path(result_dir, "gprofiler_enrichment_plot.png")
+csv_output_path <- file.path(result_dir, "enrichment results/gprofiler_results.csv")
+plot_output_path <- file.path(result_dir, "enrichment results/plots/gprofiler_enrichment_plot.png")
 
 library(tidyr)
 
