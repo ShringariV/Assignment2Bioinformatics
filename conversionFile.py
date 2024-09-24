@@ -1,10 +1,10 @@
 import pandas as pd
+from pybiomart import Dataset
 
-# Load the metadata file
-metadata_df = pd.read_csv('data/metadata_ERP107715.tsv', sep='\t')
+df = pd.read_csv('part3/ERP107715_diff_expr_results.tsv', sep='\t')
 
-# Update 'refinebio_title' with the combined text from 'refinebio_title' and 'refinebio_sex'
-metadata_df['refinebio_title'] = metadata_df['refinebio_title'] + ' - ' + metadata_df['refinebio_sex']
+nulls = df['threshold'].isnull()
 
-# Save the updated DataFrame to a new TSV file
-metadata_df.to_csv('updated_metadata_ERP107715.tsv', sep='\t', index=False)
+df.loc[nulls, 'threshold'] = 'False'
+
+df.to_csv('differential_expression_results.tsv', sep='\t', index=False)
