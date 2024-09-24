@@ -1,0 +1,11 @@
+id,pvalue,padj,ES,NES,nMoreExtreme,size,leadingEdge,method,Description,GeneRatio,BgRatio,RichFactor,FoldEnrichment,zScore,p.adjust,qvalue,geneID,Count,query,significant,term_size,query_size,intersection_size,precision,recall,term_id,source,effective_domain_size,source_order,parents,fdr,logFoldChange,p_value,methods_included,significant_count
+ENSG00000229807,3.1118988484719425e-10,,,,,,,mannWhitneyUTest_results,,,,,,,,,,,,False,,,,,,,,,,,9.651793574744198e-07,-4.451520181264288,,1,0
+ENSG00000129824,3.11430529137555e-10,,,,,,,mannWhitneyUTest_results,,,,,,,,,,,,False,,,,,,,,,,,9.651793574744198e-07,4.751198108227914,,1,0
+ENSG00000231535,3.11430529137555e-10,,,,,,,mannWhitneyUTest_results,,,,,,,,,,,,False,,,,,,,,,,,9.651793574744198e-07,0.8590901566737712,,1,0
+ENSG00000067048,3.11430529137555e-10,,,,,,,mannWhitneyUTest_results,,,,,,,,,,,,False,,,,,,,,,,,9.651793574744198e-07,4.573543452474485,,1,0
+ENSG00000183878,3.116713413595174e-10,,,,,,,mannWhitneyUTest_results,,,,,,,,,,,,False,,,,,,,,,,,9.651793574744198e-07,2.576580270910892,,1,0
+ENSG00000278847,3.116713413595174e-10,,,,,,,mannWhitneyUTest_results,,,,,,,,,,,,False,,,,,,,,,,,9.651793574744198e-07,1.0420461116270336,,1,0
+ENSG00000233864,3.116713413595174e-10,,,,,,,mannWhitneyUTest_results,,,,,,,,,,,,False,,,,,,,,,,,9.651793574744198e-07,1.131075507424509,,1,0
+ENSG00000114374,3.116713413595174e-10,,,,,,,mannWhitneyUTest_results,,,,,,,,,,,,False,,,,,,,,,,,9.651793574744198e-07,1.3869423346713332,,1,0
+ENSG00000067646,3.116713413595174e-10,,,,,,,mannWhitneyUTest_results,,,,,,,,,,,,False,,,,,,,,,,,9.651793574744198e-07,2.3764162051267324,,1,0
+ENSG00000260197,3.116713413595174e-10,,,,,,,mannWhitneyUTest_results,,,,,,,,,,,,False,,,,,,,,,,,9.651793574744198e-07,1.0062433400962414,,1,0
