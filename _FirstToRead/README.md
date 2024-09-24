@@ -1,5 +1,7 @@
 # Assignment2Bioinformatics Requirements
 
+[Github] (https://github.com/ShringariV/Assignment2Bioinformatics/settings)
+
 1.	Download the expression data and matching metadata from Refine.Bio that you selected in Assignment 1.
 
 a.	You should have a matrix of samples by genes expression data
