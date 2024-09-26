@@ -25,6 +25,6 @@ plt.hist(downRegulated, bins=50, alpha=0.5, label='Downregulated')
 plt.legend(loc='upper right')
 
 # save plot to a file
-plt.savefig("genes_plot.png")
+plt.savefig("wilcoxonTestPlot.png")
 
 plt.show()
